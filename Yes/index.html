@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Yes for Eyes</title>
+</head>
+<body>
+	<div class="overlay" onclick="deactive()" id="overlay"></div>
+	<header class="header">
+		<nav class="menu">
+			<ul class="menu__list">
+				<li class="menu__list-item">
+					<a href="#" class="main-logo">
+						<img src="img/main-logo.png" alt="" class="main-logo-img">
+					</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__list-link" href="#">Sun</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__list-link" href="#">Optical</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__list-link" href="#">Fit guide</a>
+				</li>
+				<li class="menu__list-item">
+					<a class="menu__list-link" href="#">Customer care</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="mobile-header">
+			<a href="#" class="main-logo">
+				<img src="img/main-logo.png" alt="" class="main-logo-img">
+			</a>
+			<div class="hamburger_btn" onclick="active()">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+		</div>
+			<nav class="mobile-menu" id="mobile-menu">
+				<a href="#" class="main-logo">
+					<img src="img/main-logo.png" alt="" class="mobile-menu-logo">
+				</a>
+				<ul class="mobile-menu__list">
+					<li class="mobile-menu__list-item">
+						<a class="mobile-menu__list-link" href="#">Sun</a>
+					</li>
+					<li class="mobile-menu__list-item">
+						<a class="mobile-menu__list-link" href="#">Optical</a>
+					</li>
+					<li class="mobile-menu__list-item">
+						<a class="mobile-menu__list-link" href="#">Fit guide</a>
+					</li>
+				</ul>
+			</nav>
+		<div class="promo">
+			<div class="promo__text">
+				<h1 class="promo__heading">We treat your eyes with care</h1>
+				<a class="promo__link" href="#">SEE THE COLLECTION <img class="promo__link-arrow" src="img/arrow-right.png"></a>
+			</div>
+			<img src="img/promo-img.jpg" alt="" class="promo__img">
+		</div>
+	</header>
+	<section class="shop">
+		<a class="shop__section" href="#">
+			<div class="shop__overlay"></div>
+			<img src="img/shop-women.jpg" class="shop__img">
+			<div href="#" class="btn shop__btn">SHOP WOMEN</div>
+		</a>
+		<a class="shop__section" href="#">
+			<div class="shop__overlay"></div>
+			<img src="img/shop-men.jpg" class="shop__img">
+			<div href="#" class="btn shop__btn">SHOP MEN</div>
+		</div>
+	</section>
+	<section class="products">
+		<div class="products__header">
+			<h2 class="products__heading">New in stock</h2>
+			<a href="#" class="products__link">SEE THE COLLECTION</a>
+		</div>
+		<div class="products__items">
+			<div class="products__item">
+				<a class="products__img-container" href="#"><img class="products__img" src="img/TIJN_Noemi_1.webp" onmouseover="this.src='img/prod-1.png'" onmouseout="this.src='img/TIJN_Noemi_1.webp'"></a>
+				<a href="#"><h3 class="products__name">Noemi</h3></a>
+				<div class="products__color">2 colours</div>
+				<div class="products__price">$95</div>
+			</div>
+			<div class="products__item">
+				<a class="products__img-container" href="#"><img class="products__img" src="img/KREWE_Hurst_1.webp" onmouseover="this.src='img/prod-2.png'" onmouseout="this.src='img/KREWE_Hurst_1.webp'"></a>
+				<a href="#"><h3 class="products__name">Hurst</h3></a>
+				<div class="products__color">2 colours</div>
+				<div class="products__price">$285</div>
+			</div>
+			<div class="products__item">
+				<a class="products__img-container" href="#"><img class="products__img" src="img/KREWE_Louisa_Nylon_1.webp" onmouseover="this.src='img/prod-3.png'" onmouseout="this.src='img/KREWE_Louisa_Nylon_1.webp'"></a>
+				<a href="#"><h3 class="products__name">Louisa Nylon</h3></a>
+				<div class="products__color">2 colours</div>
+				<div class="products__price">$315</div>
+			</div>
+		</div>
+	</section>
+	<section class="model">
+		<img class="model__img" src="img/model.jpg">
+		<a class="model__text" href="#">
+			<div class="model__brand">TIJN</div>
+			<div class="model__name">Mitchel</div>
+			<div class="model__desc">All-time classic round shape</div>
+			<div class="btn model__btn">SHOP THIS MODEL</div>
+		</a>
+	</section>
+	<section class="products">
+		<div class="products__header">
+			<h2 class="products__heading">Bestsellers</h2>
+			<a href="" class="products__link">SEE THE COLLECTION</a>
+		</div>
+		<div class="products__items">
+			<div class="products__item">
+				<a class="products__img-container" href="#"><img class="products__img" src="img/TIJN_Saskia_1.webp" onmouseover="this.src='img/best-1.png'" onmouseout="this.src='img/TIJN_Saskia_1.webp'"></a>
+				<a href="#"><h3 class="products__name">Saskia</h3></a>
+				<div class="products__price">$115</div>
+			</div>
+			<div class="products__item">
+				<a class="products__img-container" href="#"><img class="products__img" src="img/TIJN_Cynthia_1.webp" onmouseover="this.src='img/best-2.png'" onmouseout="this.src='img/TIJN_Cynthia_1.webp'"></a>
+				<a href="#"><h3 class="products__name">Cynthia</h3></a>
+				<div class="products__color">2 colours</div>
+				<div class="products__price">$95</div>
+			</div>
+			<div class="products__item">
+				<a class="products__img-container" href="#"><img class="products__img" src="img/TIJN_Elimear_1.webp" onmouseover="this.src='img/best-3.png'" onmouseout="this.src='img/TIJN_Elimear_1.webp'"></a>
+				<a href="#"><h3 class="products__name">Eimear</h3></a>
+				<div class="products__color">2 colours</div>
+				<div class="products__price">$105</div>
+			</div>
+		</div>
+	</section>
+	<section class="shop">
+		<a class="shop__section" href="#">
+			<div class="shop__overlay"></div>
+			<img src="img/sight-1.jpg" class="shop__img">
+			<div href="#" class="btn shop__btn">FOR SIGHT</div>
+		</a>
+		<a class="shop__section" href="#">
+			<div class="shop__overlay"></div>
+			<img src="img/sight-2.jpg" class="shop__img">
+			<div href="#" class="btn shop__btn">FOR SIGHT</div>
+		</div>
+	</section>
+	<section class="brands">
+		<div class="products__header">
+			<h2 class="products__heading">Our brands</h2>
+			<a href="" class="products__link">SEE MORE</a>
+		</div>
+		<div class="brands__items">
+			<a class="brands__link krewe" href="#">
+				<img class="brands__img krewe" src="img/Krewe_Stroke.svg" onmouseover="this.src='img/brands-1.png'" onmouseout="this.src='img/Krewe_Stroke.svg'">
+			</a>
+			<a class="brands__link krewe" href="#">
+				<img class="brands__img carla" src="img/carla_stroke_pink.svg" onmouseover="this.src='img/brands-2.png'" onmouseout="this.src='img/carla_stroke_pink.svg'">
+			</a>
+			<a class="brands__link modern" href="#">
+				<img class="brands__img modern" src="img/ModernLegacy_Stroke.svg" onmouseover="this.src='img/brands-3.png'" onmouseout="this.src='img/ModernLegacy_Stroke.svg'">
+			</a>
+			<a class="brands__link tijn" href="#">
+				<img class="brands__img tijn" src="img/TIJN_Stroke.svg" onmouseover="this.src='img/brands-4.png'" onmouseout="this.src='img/TIJN_Stroke.svg'">
+			</a>
+		</div>
+	</section>
+	<section class="about">
+		
+		<div class="about__wrapper">
+			<div class="about__text">
+				<h2 class="products__heading">Who are we?</h2>
+				<p class="about__desc">
+					Apologies if you were looking for an ordinary optical store. We've hand-picked the unique brands from all over the world to give you the special look for your everyday life. <br><br>
+					Our glasses will have you looking great and feeling better. We work with independent brands who use the highest-grade of materials, demonstrating detail and craftsmanship in every single pair. A wide range of styles reflect the diversity of our clients and are made to suit different face shapes.
+				</p>
+			</div>
+			<img class="about__img" src="img/about.jpg"></img>
+		</div>
+	</section>
+	<footer class="footer">
+		<div class="footer__header">
+			<a class="footer__logo-link" href="#"><img src="img/main-logo.png" alt="" class="footer__logo"></a>
+			<div class="footer__descr">We treat your eyes with care</div>
+		</div>
+		<div class="footer__content">
+			<div class="footer__content-left">
+				<div class="footer__lists">
+					<ul class="footer__list">
+						<li class="footer__list-heading footer__list-item">Shop</li>
+						<a href="#"><li class="footer__list-item">Sun</li></a>
+						<a href="#"><li class="footer__list-item">Optical</li></a>
+						<a href="#"><li class="footer__list-item">Brands</li></a>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__list-heading footer__list-item">Customer care</li>
+						<a href="#"><li class="footer__list-item">FAQ</li></a>
+						<a href="#"><li class="footer__list-item">Shipping and returns</li></a>
+						<a href="#"><li class="footer__list-item">Fit guide</li></a>
+					</ul>
+					<ul class="footer__list">
+						<li class="footer__list-heading footer__list-item">Info</li></a>
+						<a href="#"><li class="footer__list-item">Terms and conditions</li>
+						<a href="#"><li class="footer__list-item">Privacy policy</li></a>
+					</ul>
+				</div>
+				<div class="footer__desc">
+					<div class="footer__designed">Designed and built by Margarita</div>
+					<div class="footer__rights">&copy; 2020 Yes for Eyes</div>
+					Photo materials belong to <a href="#">Krewe</a>, <a href="#"> Carla Colour</a>, <a href="#">TIJN</a>, <a href="#">Modern Legacy</a>, <a href="#">Unsplash</a>
+					<p>This site is a design concept and not meant for commercial purposes. I don't own or sell any goods displayed on this site.</p>
+				</div>
+			</div>
+			<div class="footer__content-right">
+				<div class="footer__subs-desc">
+					No spam, just pure inspiration and good news
+					<form action="#">
+						<input class="footer__email" type="email" placeholder="Your e-mail">
+					</form>
+				</div>
+				<div class="footer__content-wrapper">
+					<div class="footer__text">
+						We are always close
+						<a class="footer__phone" href="tel:+316574857326">+31 657 485 73 26</a>
+						<a class="footer__mail" href="mailto:hello@yesforeyes.com">hello@yesforeyes.com</a>
+					</div>
+					<div class="footer__social">
+						<a href="#">
+							<i class="fab fa-instagram social-icon"></i>
+						</a>
+						<a href="#">
+							<i class="fab fa-facebook-f social-icon"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer__desc-copy">
+					<div class="footer__designed">Designed and built by Margarita</div>
+					<div class="footer__rights">&copy; 2020 Yes for Eyes</div>
+					Photo materials belong to <a href="#">Krewe</a>, <a href="#"> Carla Colour</a>, <a href="#">TIJN</a>, <a href="#">Modern Legacy</a>, <a href="#">Unsplash</a>
+					<p>This site is a design concept and not meant for commercial purposes. I don't own or sell any goods displayed on this site.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/script.js">
+
+	</script>
+</body>
+</html>

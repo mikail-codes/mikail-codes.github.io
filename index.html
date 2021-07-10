@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
+	<link rel="stylesheet" href="css/style.css">
+	<title>Mikail</title>
+</head>
+<body>
+	<nav class="menu">
+		<ul>
+			<li onclick="main()"><a href="#" class="menu__list-link yellow" id="menu-main">main</a></li>
+			<li onclick="portfolio()" ><a href="#" class="menu__list-link" id="menu-portfolio">portfolio</a></li>
+			<li onclick="about()" ><a href="#" class="menu__list-link" id="menu-about">about</a></li>
+		</ul>
+	</nav>
+	<section class="main active" id="main">
+		<h1>Hello I'm Mikail. </h1>
+		<p>A freelance Web Developer based in Baku.</p>
+		<img src="img/img.jpg" alt="">
+	</section>
+	<section class="portfolio deactive" id="portfolio">
+		<ul>
+			<li><a target="_blank" href="Yes/index.html"><img src="img/portfolio-1-min.jpg" alt=""></a></li>
+			<li><a target="_blank" href="RunSmart/index.html"><img src="img/portfolio-2-min.jpg" alt=""></a></li>
+			<li><a target="_blank" href="UberSite/index.html"><img src="img/portfolio-3-min.jpg" alt=""></a></li>
+		</ul>
+	</section>
+	<section class="about deactive" id="about">
+		<h2>i use</h2>
+		<ul>
+			<li><i class="fab fa-html5"></i></li>
+			<li><i class="fab fa-css3-alt"></i></li>
+			<li><i class="fab fa-bootstrap"></i></li>
+			<li><i class="fab fa-sass"></i></li>
+			<li><i class="fab fa-js-square"></i></li>
+			<!-- <li>jQuery</li> -->
+		</ul>
+		<h2>contacts</h2>
+			<ul>
+				<li><a href="mailto:mikail.codes@gmail.com">Email</a></li>
+				<li><a href="https://github.com/mikail-codes">Github</a></li>
+				<li><a href="https://t.me/mikail_codes">Telegram</a></li>
+			</ul>
+	</section>
+	<script src="js/script.js"></script>
+</body>
+</html>

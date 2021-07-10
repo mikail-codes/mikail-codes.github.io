@@ -1,0 +1,39 @@
+.overlay
+	background-color: rgba(0, 0, 0, 0.46)
+	height: 100%
+	position: fixed
+	top: 0
+	width: 100%
+	display: none
+	.modal
+		text-align: center
+		background: #F2F2F2
+		width: 382px
+		padding: 35px 0 40px
+		position: relative
+		left: 50%
+		transform: translate(-50%, -50%)
+		top: 50%
+		&__close
+			position: absolute
+			right: -40px
+			top: 0
+			cursor: pointer
+			color: $main-color
+			font-size: 41px
+			line-height: 21px
+		&__subtitle
+			font-size: 19px
+			font-weight: bold
+		&__desc
+			margin-top: 10px
+			font-size: 14px
+			font-weight: bold
+		.feed-form
+			margin: 25px auto 0
+
+#consultation, #order, #thanks
+	display: none
+
+#thanks
+	padding: 35px 62px 40px 67px

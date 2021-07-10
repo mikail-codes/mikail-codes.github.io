@@ -1,0 +1,484 @@
+*
+	font-family: 'Roboto', sans-serif
+	font-weight: normal
+	color: #000
+	padding-inline-start: 0
+	margin-block-start: 0
+	margin-block-end: 0
+	margin: 0
+
+.btn
+	visibility: hidden
+	font-size: 18px
+	padding: 41px 80px
+	text-decoration: none
+	background-color: #ffbcbc
+	position: absolute
+	&:hover
+		background: #fff
+		color: #ffbcbc
+		transition: 0.3s all
+
+a:hover
+	color: #ffbcbc
+
+.deactive
+	display: none
+.absolute
+	position: absolute
+	opacity: 0.7
+	background: #000
+	height: 10000px
+	width: 100%
+	z-index: 9
+.menu
+	&__list
+		display: flex
+		justify-content: space-between
+		&-item
+			list-style: none
+			border: 2px solid #1a1a1a
+			display: flex
+			align-items: center
+			width: 12%
+			justify-content: center
+			border-left: none
+			&:first-child
+				padding-left: 68px
+				width: 31%
+				justify-content: start
+			&:last-child
+				border-right: none
+				padding-right: 74px
+				width: 31%
+				justify-content: flex-end
+		&-link
+			text-decoration: none
+			font-size: 22px
+			text-align: center
+.mobile-header
+	display: none
+	padding: 10px
+.mobile-menu
+	display: none
+	height: 100%
+	width: 80%
+	position: fixed
+	background: #fff
+	left: -100%
+	top: 0
+	z-index: 100
+	transition: 0.5s all
+	&__list-item
+		border-bottom: 1px solid #1a1a1a
+		padding: 10px
+	&__list-link
+		text-decoration: none
+	.main-logo
+		padding: 15px 0 25px 10px
+.promo
+	padding: 0 130px 0 120px
+	position: relative
+	min-height: 720px
+	&__text
+		position: absolute
+		bottom: 194px
+	&__heading
+		font-size: 84px
+		margin: 0
+	&__link
+		font-size: 17px
+		text-decoration: none
+		display: flex
+		align-items: center
+		&-arrow
+			margin-left: 15px
+	&__img
+		position: absolute
+		top: 71px
+		right: 130px
+		z-index: -1
+
+.shop
+	padding: 165px 0
+	display: flex
+	&__overlay
+		background: rgba(255, 255, 255, 0.2)
+		width: 100%
+		height: 100%
+		position: absolute
+		visibility: hidden
+	&__section
+		position: relative
+		width: 50%
+		cursor: pointer
+		display: block
+		text-decoration: none
+		&:hover .shop__overlay
+			visibility: visible
+			transition: 0.5s all
+		&:hover .shop__btn
+			visibility: visible
+			transition: 0.5s all
+	&__btn
+		right: 0
+		bottom: 0
+	&__img
+		display: block
+		width: 100%
+
+.products
+	&__header
+		padding: 0 71px 0 66px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-bottom: 2px solid #1a1a1a
+	&__heading
+		font-size: 70px
+		font-weight: bold
+	&__link
+		font-size: 17px
+		text-decoration: none
+	&__items
+		padding: 0 71px 0 66px
+		display: flex
+		justify-content: space-between
+	&__item
+		text-align: center
+		margin-top: 75px
+	&__img
+		height: 254px
+		width: 100%
+		object-fit: cover
+		&-container
+			display: block
+			width: 455px
+	&__name
+		font-size: 20px
+		font-weight: bold
+		margin-top: 20px
+	&__color
+		font-size: 16px
+		margin-top: 7px
+	&__price
+		font-size: 16px
+		font-weight: bold
+		margin-top: 14px
+	a
+		text-decoration: none
+
+.model
+	padding: 195px 0
+	display: flex
+	&__img
+		display: block
+		width: 45%
+	&__text
+		background: #AABAD0
+		width: 100%
+		cursor: pointer
+		position: relative
+		padding-left: 71px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		text-decoration: none
+		&:hover .model__btn
+			visibility: visible
+	&__btn
+		display: block
+		left: 72px
+		bottom: 0
+	&__brand
+		font-size: 19px
+	&__name
+		margin-top: 20px
+		font-size: 70px
+	&__desc
+		margin-top: 20px
+		font-size: 20px
+
+.brands
+	&__img
+		height: 255px
+		object-fit: contain
+	.krewe
+		width: 36%
+	.carla
+		width: 63%
+	.modern
+		width: 71%
+	.tijn
+		width: 28%
+
+.about
+	padding: 195px 300px 150px 139px
+	&__wrapper
+		display: flex
+		justify-content: center
+	&__text
+		margin-right: 111px
+	&__desc
+		width: 470px
+		font-size: 20px
+		line-height: 30px
+		margin-top: 30px
+
+.footer
+	background: #AABAD0
+	&__header
+		padding: 15px 140px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-bottom: 2px solid #1a1a1a
+	&__content-left
+		border-right: 2px solid #1a1a1a
+		padding: 28px 80px 0 140px
+		width: 55%
+	&__content-right
+		padding: 28px 0 0 41px
+	&__content-wrapper
+		display: flex
+	&__descr
+		font-size: 18px
+		font-weight: bold
+	&__content
+		display: flex
+	&__lists
+		display: flex
+		justify-content: space-between
+	&__list
+		list-style: none
+		a
+			text-decoration: none
+	&__list-heading
+		font-size: 20px
+		font-weight: bold
+	&__list-item
+		font-size: 17px
+		margin-top: 10px
+	&__designed, .footer__rights
+		font-size: 18px
+	&__designed
+		margin-top: 36px
+	&__rights
+		margin-top: 10px
+		margin-bottom: 30px
+	&__desc
+		p
+			margin-top: 5px
+		&-copy
+			display: none
+	&__desc, .footer__desc p
+		font-size: 12px
+		font-weight: normal
+	&__subs-desc
+		font-size: 18px
+	&__email
+		background: #AABAD0
+		border: none
+		border-bottom: 1px solid #1a1a1a
+		margin-top: 20px
+		outline: none
+	&__text
+		font-size: 18px
+		margin-top: 44px
+	&__phone
+		font-size: 18px
+		text-decoration: none
+		margin-top: 10px
+		display: block
+	&__mail
+		font-size: 18px
+		text-decoration: none
+		display: block
+		margin-top: 10px
+	.social-icon
+		font-size: 22px
+		margin-right: 15px
+	&__social
+		margin-top: 44px
+		margin-left: 30px
+		display: flex
+
+@media (max-width: 1200px)
+	.products
+		&__items
+			flex-wrap: wrap
+		&__img-container
+			width: 430px
+
+	.about
+		padding: 0
+
+@media (max-width: 991px)
+	.btn
+		visibility: visible
+		padding: 25px
+		font-size: 14px
+	.about
+		&__wrapper
+			flex-wrap: wrap
+		&__text
+			margin-right: 0
+			margin-bottom: 20px
+			text-align: center
+	.menu
+		&__list-link
+			font-size: 16px
+	.brands
+		&__img
+			height: 80px
+	.promo
+		&__text
+			bottom: 100px
+	.shop, .model
+		padding: 50px 0
+	.products
+		&__heading
+			font-size: 53px
+		&__items
+			justify-content: center
+	.footer
+		&__content
+			flex-wrap: wrap
+			&-left
+				width: 100%
+				border-right: none
+				border-bottom: 2px solid #1a1a1a
+				padding: 20px 20px
+			&-right
+				width: 100%
+				padding: 20px 20px
+				display: flex
+				flex-wrap: wrap
+				margin-top: 20px
+		&__desc
+			display: none
+			&-copy
+				display: block
+		&__text
+			margin-top: 0
+		&__subs-desc
+			padding: 15px
+			border-right: 2px solid #1a1a1a
+		&__content-wrapper
+			padding: 15px
+
+@media (max-width: 767px)
+	.main-logo-img
+		object-fit: contain
+		height: 30px
+	.mobile-menu-logo
+		object-fit: contain
+		height: 40px
+	.menu
+		display: none
+	.mobile-header
+		display: block
+		position: relative
+		.hamburger_btn
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			right: 5%
+			span
+				width: 20px
+				background: #1a1a1a
+				height: 2px
+				display: block
+				margin-bottom: 5px
+	.mobile-menu
+		display: block
+	.mobile-menu-active
+		left: 0
+	.mobile-menu__list-item
+		&:first-child
+			border-top: 1px solid #1a1a1a
+	.main-logo
+		display: block
+	.promo
+		padding: 0 15px
+		min-height: 400px
+		&__text
+			bottom: 0
+		&__heading
+			font-size: 40px
+			font-weight: bold
+		&__img
+			width: 60%
+			right: 0px
+		&__link
+			margin-top: 15px
+	.shop
+		flex-direction: column
+		&__section
+			width: 100%
+	.model
+		flex-wrap: wrap
+		text-align: center
+		&__img
+			width: 100%
+		&__text
+			padding: 20px
+		&__btn
+			position: static
+			margin-top: 15px
+	.products
+		&__img-container
+			width: 100%
+		&__heading
+			font-size: 25px
+			width: 50%
+		&__header
+			padding: 0 5px
+		&__link
+			font-size: 13px
+		&__items
+			padding: 0 10px
+		&__item
+			margin-top: 10px
+		&__img
+			object-fit: contain
+	.about
+		&__desc
+			width: 100%
+		&__img
+			width: 100%
+		&__text
+			.products__heading
+				width: 100%
+				text-align: center
+	.brands
+		text-align: center
+		&__items
+			padding: 25px 0
+		&__img
+			height: 40px
+
+	.footer
+		&__header
+			padding: 15px
+		&__descr
+			font-size: 14px
+			width: 40%
+		&__subs-desc
+			border: none
+		&__lists
+			flex-wrap: wrap
+		&__list
+			&:last-child
+				margin-top: 30px
+		&__content-right
+			padding: 0
+		&__desc-copy
+			padding: 15px
+			font-size: 12px
+			p
+				margin-top: 5px
+	.btn
+		visibility: visible
+		padding: 25px 35px
+		font-size: 15px
